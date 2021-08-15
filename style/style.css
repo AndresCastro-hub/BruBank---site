@@ -1,0 +1,334 @@
+* {
+  margin-left: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%; }
+
+#BotonDePrestamo {
+  color: white;
+  background-color: #614ad9; }
+
+#cargandoPrestamo {
+  display: none; }
+
+#resultadoPrestamo {
+  display: none; }
+
+.gifPrestamo {
+  width: 60px; }
+
+.card.card-body.text-center.mt-5 {
+  background-color: white; }
+
+.calculadoraPrestamo {
+  color: #614ad9;
+  font-family: 'Montserrat', sans-serif; }
+
+.alert.alert-danger {
+  color: white;
+  font-size: 18px; }
+
+.alert {
+  background-color: #614ad9 !important; }
+
+#botonForm {
+  background-color: #614ad9; }
+
+.result {
+  color: #614ad9; }
+
+.navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3.2rem 2.5rem; }
+  .navbar .menu-layout {
+    display: none; }
+  .navbar .logo {
+    width: 15rem; }
+  .navbar .hide {
+    opacity: 0.5; }
+  .navbar .hamburger {
+    transition: all 0.4s ease;
+    width: 5rem; }
+  .navbar .menu-mobile {
+    position: absolute;
+    top: 8rem;
+    left: 0%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end; }
+    .navbar .menu-mobile .menu {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      background-color: white;
+      padding: 3.6rem 0; }
+      .navbar .menu-mobile .menu ul {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem; }
+        .navbar .menu-mobile .menu ul li {
+          border-top: 1px solid #eeeeee;
+          width: 100vw;
+          text-align: center;
+          padding-top: 20px; }
+          .navbar .menu-mobile .menu ul li a {
+            font-size: 1.6rem;
+            text-decoration: none;
+            color: #343346;
+            font-weight: 600;
+            display: block;
+            font-family: 'Roboto', sans-serif; }
+      .navbar .menu-mobile .menu .boton {
+        font-size: 1.6rem;
+        font-weight: 600;
+        color: #343346;
+        cursor: pointer;
+        text-decoration: underline;
+        font-family: 'Roboto', sans-serif; }
+
+@media screen and (min-width: 801px) {
+  .navbar {
+    padding: 3.5rem 5rem 1rem 4rem; }
+    .navbar .logo {
+      width: 17rem; }
+    .navbar .menu-layout {
+      display: flex;
+      position: static; }
+      .navbar .menu-layout .menu {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-top: 5px; }
+        .navbar .menu-layout .menu ul {
+          display: flex;
+          flex-direction: row;
+          gap: 6rem;
+          list-style: none;
+          margin-top: 20px; }
+          .navbar .menu-layout .menu ul li a {
+            font-size: 1.6rem;
+            text-decoration: none;
+            color: #614ad9;
+            font-weight: 600;
+            transition: opacity 0.25s ease-in 0s;
+            font-family: 'Roboto', sans-serif; }
+            .navbar .menu-layout .menu ul li a:hover {
+              opacity: 0.6; }
+      .navbar .menu-layout .boton {
+        font-size: 1.6rem;
+        font-weight: 600;
+        padding: 1.8rem 3rem;
+        border-radius: 3rem;
+        font-family: 'Roboto', sans-serif;
+        cursor: pointer;
+        background-color: rgba(97, 74, 217, 0.1);
+        border-radius: 7px;
+        margin-right: 50px; }
+    .navbar .hamburger {
+      display: none; } }
+
+.banner .img-desktop {
+  display: none;
+  width: 100%; }
+
+.banner .img-mobile {
+  display: block;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 30px; }
+
+.banner .text-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 13rem 2rem; }
+
+.banner .titel {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 3.2rem;
+  text-align: center;
+  color: #343348; }
+
+.banner .description {
+  text-align: center;
+  margin: 2.5rem 0 3.5rem 0; }
+  .banner .description .descriptionTwo {
+    color: #6a7587;
+    font-size: 1.8rem; }
+
+.banner .descriptionOne {
+  display: none; }
+
+.banner .img-store {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 30px; }
+  .banner .img-store img {
+    border-radius: 14px;
+    width: 15rem; }
+
+.banner .iqrUHq {
+  position: absolute;
+  left: 6vw;
+  top: 600px;
+  transform: rotate(-18deg);
+  z-index: -1;
+  width: 642px;
+  height: 295px;
+  opacity: 0.04;
+  background: #343348;
+  border-radius: 400px; }
+
+@media screen and (min-width: 801px) {
+  .banner {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; }
+    .banner .iqrUHq {
+      top: -7vw;
+      left: 43.4vw;
+      width: 1284px;
+      height: 590px;
+      transform: rotate(-31deg);
+      z-index: -1; }
+    .banner .img-mobile {
+      display: none; }
+    .banner .img-desktop {
+      display: block;
+      flex: 50%;
+      width: 40%;
+      margin-top: 50px; }
+    .banner .text-block {
+      flex: 50%;
+      align-items: flex-start; }
+    .banner .titel {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 900;
+      font-style: normal;
+      font-size: 6.5rem;
+      text-align: left;
+      color: #343348; }
+    .banner .description {
+      text-align: left; }
+      .banner .description .descriptionOne {
+        display: flex;
+        position: sticky;
+        color: #6a7587;
+        font-size: 2.5rem; }
+      .banner .description .descriptionTwo {
+        color: #6a7587;
+        font-size: 2.5rem; }
+      .banner .description .img-store {
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start; }
+        .banner .description .img-store img {
+          width: 35%;
+          height: 8rem; } }
+
+.prestamos {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .prestamos .descripcion {
+    text-align: center;
+    margin-top: 50px; }
+    .prestamos .descripcion .title-prestamo {
+      font-size: 3rem;
+      font-family: 'Montserrat', sans-serif; }
+    .prestamos .descripcion .description-prestamo {
+      color: #614ad9;
+      font-size: 20px;
+      font-family: 'Montserrat', sans-serif;
+      padding: 15px 0; }
+
+.dolarCotizacion {
+  margin-top: 50px;
+  background-color: #614ad9;
+  height: 22rem; }
+  .dolarCotizacion .dolarCotizacion__title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    text-align: center;
+    font-size: 2.5rem;
+    padding: 20px 0;
+    color: white; }
+  .dolarCotizacion .btn {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .dolarCotizacion .btn #prestamos {
+      display: flex;
+      align-items: center;
+      background-color: #614ad9;
+      font-size: 15px;
+      color: white; }
+  .dolarCotizacion .dolar-bru {
+    color: white;
+    font-size: 2.5rem;
+    text-align: center;
+    padding-top: 20px;
+    font-family: 'Montserrat', sans-serif; }
+
+.container {
+  margin: auto; }
+
+.footer {
+  background-color: whitesmoke;
+  padding: 40px 0; }
+
+ul {
+  list-style: none; }
+  ul li a {
+    color: gray;
+    font-size: 13px;
+    line-height: 35px;
+    cursor: pointer; }
+
+.row {
+  display: flex;
+  flex-wrap: wrap; }
+
+.footer-col {
+  width: 25%;
+  padding: 0 15px;
+  margin-bottom: 30px;
+  position: relative; }
+  .footer-col h4 {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 20px; }
+
+img {
+  width: 200px;
+  padding-top: 10px; }
+
+.img-footer {
+  width: 100px; }
+
+@media (max-width: 767px) {
+  .footer-col {
+    width: 50%;
+    margin-bottom: 30px; } }

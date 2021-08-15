@@ -1,0 +1,44 @@
+
+#BotonDePrestamo{
+    color:white;
+    background-color: rgb(97, 74, 217);;
+}
+
+#cargandoPrestamo{
+    display: none;
+}
+
+#resultadoPrestamo{
+    display: none;
+}
+
+.gifPrestamo{
+    width: 60px;
+}
+
+.card.card-body.text-center.mt-5{
+    background-color: white;
+}
+
+.calculadoraPrestamo{
+    color:rgb(97, 74, 217);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.alert.alert-danger{
+    color: white;
+    font-size: 18px;
+}
+
+.alert{
+    background-color: rgb(97, 74, 217) !important;
+}
+
+#botonForm{
+    background-color: rgb(97, 74, 217);
+}
+
+
+.result{
+    color: $violet;
+}

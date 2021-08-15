@@ -1,0 +1,41 @@
+.dolarCotizacion{
+    margin-top: 50px;
+    background-color: $violet;
+    height: 22rem;
+
+
+.dolarCotizacion__title{   
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    text-align: center;
+    font-size: 2.5rem;
+    padding: 20px 0;
+    color: white; 
+    }
+
+    .btn{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        #prestamos{
+            display: flex;
+            align-items: center;
+            background-color: $violet;
+            font-size: 15px;
+            color: white;
+            
+        }
+    }
+
+    .dolar-bru{
+        color: white;
+        font-size: 2.5rem;
+        text-align: center;
+        padding-top: 20px;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+
+}

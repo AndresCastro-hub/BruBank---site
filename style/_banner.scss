@@ -1,0 +1,148 @@
+.banner{
+    .img-desktop{
+        display: none;
+        width: 100%;
+    }
+
+    .img-mobile{
+        display: block;
+        width: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 30px;
+       
+    }
+
+    .text-block{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 13rem 2rem;
+    }
+
+    .titel{
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 900;
+        font-style: normal;
+        font-size: 3.2rem;
+        text-align: center;
+        color: rgb(52, 51, 72);
+    }
+
+    .description{
+        text-align: center;
+        margin: 2.5rem 0 3.5rem 0;
+
+        .descriptionTwo{
+            color: rgb(106, 117, 135);
+            font-size: 1.8rem;
+        }
+
+    }
+
+    .descriptionOne{
+        display: none;
+    }
+
+    .img-store{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+        margin-top: 30px;
+
+        img{
+            border-radius: 14px;
+            width: 15rem;  
+        }
+    }
+
+    .iqrUHq {
+        position: absolute;
+        left: 6vw;
+        top: 600px;
+        transform: rotate(-18deg);
+        z-index: -1;
+        width: 642px;
+        height: 295px;
+       
+        opacity: 0.04;
+        background: rgb(52, 51, 72);
+        border-radius: 400px;
+    }
+}
+
+@media screen and (min-width:801px) {
+
+    .banner{
+
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        .iqrUHq {
+            top: -7vw;
+            left: 43.4vw;
+            width: 1284px;
+            height: 590px;
+            transform: rotate(-31deg);
+            z-index: -1;
+        }
+
+        .img-mobile{
+            display: none;
+           
+        }
+          
+        .img-desktop{
+            display: block;
+            flex: 50%;
+            width: 40%;
+            margin-top: 50px;
+        }
+        
+        .text-block{
+            flex: 50%;
+            align-items: flex-start;
+        }
+
+        .titel{
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 900;
+            font-style: normal;
+            font-size: 6.5rem;
+            text-align: left;
+            color: rgb(52, 51, 72); 
+        }
+
+        .description{
+            text-align: left;
+
+        .descriptionOne{
+            display: flex;
+            position: sticky;
+            color: rgb(106, 117, 135);
+            font-size: 2.5rem;
+        }
+
+        .descriptionTwo{
+            color:rgb(106, 117, 135); 
+            font-size: 2.5rem;   
+        }
+    
+        .img-store{
+            display: flex;
+            align-items: flex-start;
+            justify-content: flex-start;
+            
+            img{
+                width: 35%;
+                height: 8rem;
+            }
+        }
+
+        }
+    }   
+}
