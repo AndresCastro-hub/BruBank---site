@@ -1,4 +1,4 @@
-# BruBank---site
+# BruBank
 
 Es un sitio dinamico con Javascript el cual es una breve imitacion del sitio BruBank. <br/>
 
